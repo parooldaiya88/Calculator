@@ -6,7 +6,7 @@ class Calculator {
   }
 
   //getter
-  
+  //pi and e getters that return formatted strings with the respective values
   get pi() {
     return `PI: ${this.PI}`;
   }
@@ -15,25 +15,29 @@ class Calculator {
   }
 
   //methods
-
+  //ratio method that calculates the height on a given ratio of x and y with a given width
   ratio(x, y, width) {
-    // const height = (ratio_height / ratio_width) * width;
+    
     const height = (width/x)/y;
     return `height is ${height} on ratio: ${x}:${y}`;
   }
-
+  // percentage method that returns the percentage of x in y
   percentage(x, y) {
     return `the percentage of x in y: ${((x / y) * 100).toFixed(2)}`;
   }
+  //addition method returns addition of x and y
   add(x, y) {
     return `the sum of x and y: ${x + y}`;
   }
+  //substract method returns substraction of x and y
   substract(x, y) {
     return `the difference of x subtracted from y: ${y - x}`;
   }
+  //multiply method returns substraction of x and y
   multiply(x, y) {
     return `the product of x multiplied by y: ${x * y}`;
   }
+  //!the divide and modulation methods throw an error if the divisor is set to 0, to avoid the division by zero error.
   divide(x, y) {
     if (y === 0) {
       return "Division by 0 is not allowed";
@@ -46,9 +50,11 @@ class Calculator {
     }
     return `the remainder of x divided by y: ${x % y}`;
   }
+  //elevate method returns power of x
   elevate(x, y) {
     return `the power of x elevated to y: ${x ** y}`;
   }
+  // sqrt method returns square root of x
   sqrt(x) {
     return `the square root of x: ${Math.sqrt(x)}`;
   }
