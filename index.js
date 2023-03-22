@@ -18,7 +18,7 @@ class Calculator {
 
   ratio(x, y, width) {
     // const height = (ratio_height / ratio_width) * width;
-    const height = (y * width)/x;
+    const height = (width/x)/y;
     return `height is ${height} on ratio: ${x}:${y}`;
   }
 
