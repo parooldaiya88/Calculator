@@ -17,23 +17,22 @@ class Calculator {
   //methods
   //ratio method that calculates the height on a given ratio of x and y with a given width
   ratio(x, y, width) {
-    
-    const height = (width/x)/y;
+    const height = (width / x) * y;
     return `height is ${height} on ratio: ${x}:${y}`;
   }
   // percentage method that returns the percentage of x in y
   percentage(x, y) {
-    return `the percentage of x in y: ${((x / y) * 100).toFixed(2)}`;
+    return `the percentage of x in y: ${((x / y) * 100).toFixed(2)}%`;
   }
   //addition method returns addition of x and y
   add(x, y) {
     return `the sum of x and y: ${x + y}`;
   }
-  //substract method returns substraction of x and y
-  substract(x, y) {
+  //subtract method returns subtraction of x and y
+  subtract(x, y) {
     return `the difference of x subtracted from y: ${y - x}`;
   }
-  //multiply method returns substraction of x and y
+  //multiply method returns multiple of x and y
   multiply(x, y) {
     return `the product of x multiplied by y: ${x * y}`;
   }
@@ -66,7 +65,7 @@ console.log(calculate.e);
 console.log(calculate.ratio(10, 5, 15));
 console.log(calculate.percentage(200, 500));
 console.log(calculate.add(200, 500));
-console.log(calculate.substract(200, 500));
+console.log(calculate.subtract(200, 500));
 console.log(calculate.multiply(200, 500));
 console.log(calculate.divide(200, 500));
 console.log(calculate.modulation(600, 500));
